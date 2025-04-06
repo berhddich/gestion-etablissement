@@ -18,3 +18,6 @@ Route::get('/', function () {
     return view('home');
 });
 Route::resource('/students', StudentController::class);
+Route::get('/students/create', function () {
+    return view('create');
+});

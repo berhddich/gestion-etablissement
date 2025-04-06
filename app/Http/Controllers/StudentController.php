@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\Student;
 class StudentController extends Controller
 {
     /**
@@ -30,16 +30,39 @@ class StudentController extends Controller
         //
     }
 
+
     /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        //
+   public function store(Request $request)
+{
+    // Validation des données
+    $validatedData = $request->validate([
+        'name' => 'required|max:255',
+        'email' => 'required|max:255|email|unique:students,email',
+        'phone' => 'required|numeric',
+        'section' => 'required|max:255',
+        'image' => 'required|image|mimes:jpg,jpeg,png,gif,svg|max:2048',
+    ]);
+
+    // Gestion du téléchargement d'image
+    if ($request->hasFile('image')) {
+        $image = $request->file('image');
+        $destinationPath = 'images/';
+        $profileImage = date('YmdHis') . '.' . $image->getClientOriginalExtension();
+        $image->move($destinationPath, $profileImage);
+        $validatedData['image'] = $profileImage;
     }
+
+    // Création de l'étudiant dans la base de données
+     Student::create($validatedData);
+
+    // Redirection après l'ajout
+    return redirect()->route('students.index')->with('success', 'Student added successfully!');
+}
 
     /**
      * Display the specified resource.
