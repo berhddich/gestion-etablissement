@@ -469,7 +469,7 @@ h2{
 .fl-table thead th {
     color: #ffffff;
     background: #4FC3A1;
-    
+
 }
 
 
@@ -505,7 +505,7 @@ h2{
     }
     .fl-table thead {
         float: left;
-        
+
     }
     .fl-table tbody {
         width: auto;
@@ -668,3 +668,13 @@ label #cancel{
     visibility: visible;
   }
 }
+.btn-create {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+    
