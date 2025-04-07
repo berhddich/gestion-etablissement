@@ -14,10 +14,11 @@ use App\Http\Controllers\StudentController;
 |
 */
 
+
+
 Route::get('/', function () {
     return view('home');
 });
-Route::resource('/students', StudentController::class);
-Route::get('/students/create', function () {
-    return view('create');
-});
+
+
+Route::resource('students', StudentController::class);

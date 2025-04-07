@@ -27,42 +27,29 @@ class StudentController extends Controller
      */
     public function create()
     {
-        //
+        return view('create');
     }
 
+    public function store(Request $request)
+    {
+        $validatedData = $request->validate([
+            'name' => 'required|max:255',
+            'email' => 'required|max:255',
+            'phone' => 'required',
+            'section' => 'required',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-   public function store(Request $request)
-{
-    // Validation des données
-    $validatedData = $request->validate([
-        'name' => 'required|max:255',
-        'email' => 'required|max:255|email|unique:students,email',
-        'phone' => 'required|numeric',
-        'section' => 'required|max:255',
-        'image' => 'required|image|mimes:jpg,jpeg,png,gif,svg|max:2048',
-    ]);
+        if ($image = $request->file('image')) {
+            $destinationPath = 'images/';
+            $profileImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
+            $image->move($destinationPath, $profileImage);
+            $validatedData['image'] = "$profileImage";
+        }
 
-    // Gestion du téléchargement d'image
-    if ($request->hasFile('image')) {
-        $image = $request->file('image');
-        $destinationPath = 'images/';
-        $profileImage = date('YmdHis') . '.' . $image->getClientOriginalExtension();
-        $image->move($destinationPath, $profileImage);
-        $validatedData['image'] = $profileImage;
+        $students = Student::create($validatedData);
+        return redirect('/students')->with('success', 'Student created successfully');
     }
-
-    // Création de l'étudiant dans la base de données
-     Student::create($validatedData);
-
-    // Redirection après l'ajout
-    return redirect()->route('students.index')->with('success', 'Student added successfully!');
-}
 
     /**
      * Display the specified resource.
@@ -70,9 +57,9 @@ class StudentController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Student $student)
     {
-        //
+        return view('show', compact('student'));
     }
 
     /**
@@ -83,7 +70,8 @@ class StudentController extends Controller
      */
     public function edit($id)
     {
-        //
+    $student = Student::findOrFail($id);
+    return view('edit', compact('student'));
     }
 
     /**
@@ -93,9 +81,26 @@ class StudentController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Student $student)
     {
-        //
+        $validatedData = $request->validate([
+            'name' => 'required|max:255',
+            'email' => 'required|max:255',
+            'phone' => 'required',
+            'section' => 'required',
+        ]);
+
+        if ($image = $request->file('image')) {
+            $destinationPath = 'images/';
+            $profileImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
+            $image->move($destinationPath, $profileImage);
+            $validatedData['image'] = "$profileImage";
+        } else {
+            unset($validatedData['image']);
+        }
+
+        $student->update($validatedData);
+        return redirect('/students')->with('success', 'Student updated successfully');
     }
 
     /**
@@ -104,8 +109,9 @@ class StudentController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Student $student)
     {
-        //
+        $student->delete();
+        return redirect('/students')->with('success', 'Student deleted successfully');
     }
 }

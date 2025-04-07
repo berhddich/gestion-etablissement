@@ -17,6 +17,9 @@
                 <th>Phone</th>
                 <th>Section</th>
                 <th>Image</th>
+                <th>Show </th>
+<th>Update </th>
+<th>Delete</th>
             </tr>
         </thead>
         <tbody>
@@ -28,6 +31,23 @@
                 <td>{{ $student->phone }}</td>
                 <td>{{ $student->section }}</td>
                 <td><img src="{{ asset('images/'.$student->image) }}" width="96" height="96"></td>
+                <td style="vertical-align:middle; ">
+                    <form method="POST" align="left">
+                    <a ; class="btn btn-info" href="{{ route('students.show' , $student->id) }}">Show</a>
+                    </form>
+                    </td>
+                    <td style="vertical-align:middle; ">
+                    <form method="POST" align="left">
+                    <a class="btn btn-primary" href="{{ route('students.edit' , $student->id) }}">Edit</a>
+                    </form>
+                    </td>
+                    <td>
+                        <form action="{{ route('students.destroy', $student->id) }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+                    </td>
             </tr>
             @endforeach
         </tbody>
