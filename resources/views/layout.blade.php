@@ -107,9 +107,9 @@
             <i class="fas fa-qrcode"></i>
             <span>Manage Students</span>
           </a>
-          <a href="#">
+          <a href="{{ url('/teachers')}}" >
             <i class="fas fa-link"></i>
-            <span>Shortcuts</span>
+            <span>Manage Teachers</span>
           </a>
           <a href="#">
             <i class="fas fa-stream"></i>
