@@ -27,6 +27,7 @@
             </div>
 
             <div class="d-flex justify-content-center gap-3 mt-4">
+                @if(Auth::user()->role === 'admin')
                 <a href="{{ route('teachers.edit', $teacher->id) }}" class="btn btn-outline-primary">
                     <i class="fas fa-edit me-1"></i> Modifier
                 </a>
@@ -37,6 +38,7 @@
                         <i class="fas fa-trash me-1"></i> Supprimer
                     </button>
                 </form>
+                @endif
             </div>
         </div>
     </div>

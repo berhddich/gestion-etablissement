@@ -3,7 +3,9 @@
 @section('content')
     <div class="d-flex justify-content-between align-items-center mb-3">
         <h2>Liste des livres</h2>
+        @if(Auth::user()->role === 'admin')
         <a class="btn btn-primary" href="{{ route('books.create') }}">➕ Nouveau Livre</a>
+        @endif
     </div>
 
     @if(session('success'))
@@ -35,11 +37,13 @@
                 </td>
                 <td>
                     <a class="btn btn-sm btn-info" href="{{ route('books.show', $book) }}">Voir</a>
+                    @if(Auth::user()->role === 'admin')
                     <a class="btn btn-sm btn-warning" href="{{ route('books.edit', $book) }}">Modifier</a>
                     <form action="{{ route('books.destroy', $book) }}" method="POST" style="display:inline;">
                         @csrf @method('DELETE')
                         <button class="btn btn-sm btn-danger" onclick="return confirm('Supprimer ce livre ?')">Supprimer</button>
                     </form>
+                    @endif
                 </td>
             </tr>
         @empty

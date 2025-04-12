@@ -3,7 +3,9 @@
 
 <div class="d-flex justify-content-between align-items-center mb-4">
     <h3 class="fw-bold">👨‍🎓 Liste des étudiants</h3>
+    @if(Auth::user()->role === 'admin')
     <a href="{{ url('/students/create')}}" class="btn btn-success">➕ Ajouter un étudiant</a>
+    @endif
 </div>
 
 <div class="row">
@@ -22,12 +24,14 @@
                 </div>
                 <div class="card-footer d-flex justify-content-between">
                     <a href="{{ route('students.show', $student->id) }}" class="btn btn-outline-info btn-sm">Voir</a>
+                    @if(Auth::user()->role === 'admin')
                     <a href="{{ route('students.edit', $student->id) }}" class="btn btn-outline-primary btn-sm">Modifier</a>
                     <form action="{{ route('students.destroy', $student->id) }}" method="POST" onsubmit="return confirm('Supprimer cet étudiant ?')">
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="btn btn-outline-danger btn-sm">Supprimer</button>
                     </form>
+                    @endif
                 </div>
             </div>
         </div>
