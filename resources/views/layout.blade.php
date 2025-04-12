@@ -63,7 +63,12 @@
 .navbar-dark .navbar-nav .nav-link:hover {
   color: #cccccc !important;
 }
-
+.nav-link.active {
+  font-weight: bold;
+  color: #0d6efd !important; /* Bootstrap primary */
+  border-left: 3px solid #0d6efd;
+  background-color: #f8f9fa;
+}   
   </style>
 </head>
 
@@ -115,13 +120,13 @@
       <h5>📚 Menu</h5>
       <ul class="nav flex-column">
         <li class="nav-item">
-            <a class="nav-link" href="{{ url('/dashboard') }}">🏠 Dashboard</a>
+            <a class="nav-link {{ request()->is('dashboard') ? 'active fw-bold text-primary' : '' }}" href="{{ url('/dashboard') }}">🏠 Dashboard</a>
           </li>
-        <li class="nav-item"><a class="nav-link" href="{{ url('/students') }}">👨‍🎓 Gérer Étudiants</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{ url('/teachers') }}">👨‍🏫 Gérer Enseignants</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{ url('/books') }}">📘 Gérer Livres</a></li>
+        <li class="nav-item"><a class="nav-link {{ request()->is('students*') ? 'active fw-bold text-primary' : '' }}" href="{{ url('/students') }}">👨‍🎓 Gérer Étudiants</a></li>
+        <li class="nav-item"><a class="nav-link {{ request()->is('teachers*') ? 'active fw-bold text-primary' : '' }}" href="{{ url('/teachers') }}">👨‍🏫 Gérer Enseignants</a></li>
+        <li class="nav-item"><a class="nav-link {{ request()->is('books*') ? 'active fw-bold text-primary' : '' }}" href="{{ url('/books') }}">📘 Gérer Livres</a></li>
         @if(Auth::user()?->role === 'admin')
-          <li class="nav-item"><a class="nav-link" href="{{ url('/users') }}">👤 Gérer Utilisateurs</a></li>
+          <li class="nav-item"><a  class="nav-link {{ request()->is('users*') ? 'active fw-bold text-primary' : '' }}" href="{{ url('/users') }}">👤 Gérer Utilisateurs</a></li>
         @endif
       </ul>
     </aside>
