@@ -1,218 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <link href="/css/app.css" rel="stylesheet">
-  <!-- Bootstrap CSS & JS -->
-  <link rel="stylesheet" href="/css/bootstrap.min.css">
-
-  <!-- Bootstrap CSS & JS Online
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-      -->
-  <script src="/js/bootstrap.bundle.min.js"></script>
-  <!-- END Bootstrap -->
-  <link rel="stylesheet" href="/css/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>School Management </title>
+  <title>School Management</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .layout-container {
+      flex: 1;
+      display: flex;
+      min-height: 0;
+      overflow: hidden;
+    }
+
+    aside.sidebar {
+      width: 220px;
+      background-color: #fff;
+      border-right: 1px solid #ddd;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    footer {
+      flex-shrink: 0;
+    }
+
+    .nav-link {
+      padding: 8px 0;
+      color: #333;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #cccccc !important;
+}
+
+  </style>
 </head>
 
 <body>
-  <!--  Header -->
-  <div class="container-fluid p-0">
-    <img src="/img/header.jpg" class="resp" style="height: 220px;">
-  </div>
-  <!-- End Header -->
+  <!-- Header -->
+  <header class="p-0">
+    <img src="/img/header.jpg" class="img-fluid w-100" style="max-height: 220px; object-fit: cover;">
+  </header>
 
-  <!--  Navbar -->
-  <!-- https://getbootstrap.com/docs/5.0/components/navbar/  -->
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="{{ url('/home') }}">🏫 School</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-
-            <a class="nav-link active" aria-current="page" href="{{ url('/home')}}">Home</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="https://getbootstrap.com/">News</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Archives</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Courses</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Library</a>
-          </li>
-
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link " href="{{ url('/home') }}">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Formations
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Web Developpement</a></li>
-              <li><a class="dropdown-item" href="#">Mobile Developpement</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Desktop Developpement</a></li>
-              <li><a class="dropdown-item" href="#">Data Sciences</a></li>
-
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Formations</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Web</a></li>
+              <li><a class="dropdown-item" href="#">Mobile</a></li>
+              <li><a class="dropdown-item" href="#">Data Science</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        @auth
+          <span class="text-white me-3">Bienvenue, {{ Auth::user()->name }}</span>
+          <form method="POST" action="{{ route('logout') }}" class="d-inline">
+            @csrf
+            <button class="btn btn-outline-light btn-sm">Déconnexion</button>
+          </form>
+        @else
+          <a href="{{ route('login') }}" class="btn btn-outline-success btn-sm">Se connecter</a>
+        @endauth
       </div>
     </div>
   </nav>
-  <!-- End Navbar -->
 
-  <!-- Sidenav & Body & Sidbar  -->
-  <div class="container" style="margin-top: 20px; margin-left:0px;">
-    <div class="row">
+  <!-- Sidebar + Main content wrapper -->
+  <div class="layout-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h5>📚 Menu</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url('/dashboard') }}">🏠 Dashboard</a>
+          </li>
+        <li class="nav-item"><a class="nav-link" href="{{ url('/students') }}">👨‍🎓 Gérer Étudiants</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ url('/teachers') }}">👨‍🏫 Gérer Enseignants</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ url('/books') }}">📘 Gérer Livres</a></li>
+        @if(Auth::user()?->role === 'admin')
+          <li class="nav-item"><a class="nav-link" href="{{ url('/users') }}">👤 Gérer Utilisateurs</a></li>
+        @endif
+      </ul>
+    </aside>
 
-      <!-- 4.1)  Sidenav avec 2 colonnes -->
-      <div class="col-2" style="margin-right:20px; margin-bottom:5px;">
-        <!-- Mettez ici le contenu de votre sidenav: des liens, des boutons de commandes...  -->
-
-
-        <div class="sidebar">
-          <header>Main Menu</header>
-          <a href="{{ url('/students')}}" class="active">
-            <i class="fas fa-qrcode"></i>
-            <span>Manage Students</span>
-          </a>
-          <a href="{{ url('/teachers')}}" >
-            <i class="fas fa-link"></i>
-            <span>Manage Teachers</span>
-          </a>
-          <a href="{{ url('/books')}}" >
-            <i class="fas fa-link"></i>
-            <span>Manage Books</span>
-          </a>
-         
-          <a href="#">
-            <i class="fas fa-calendar"></i>
-            <span>Events</span>
-          </a>
-          <a href="#">
-            <i class="far fa-question-circle"></i>
-            <span>About</span>
-          </a>
-          <a href="#">
-            <i class="fas fa-sliders-h"></i>
-            <span>Services</span>
-          </a>
-          <a href="#">
-            <i class="far fa-envelope"></i>
-            <span>Contact</span>
-          </a>
-        </div>
-
-
-      </div>
-      <!-- End Sidenav-->
-
-
-      <!-- BODY avec 9 colonnes-->
-      <div class="col-9">
-        <div class="card" style="width: 100%; margin-left:75px; margin-right:0px;">
-          <div class="card-header bg-primary" style="color:white; font-size: 18px; font-weight:bold;" style="width: 100%;">
-            School Management !
-          </div>
-          <div class="card-body">
-
-            <div class="container">
-              @yield('content')
-
-            </div>
-
-          
-          </div>
-        </div>
-      </div>
-      <!-- End Body-->
-
-
-
-    </div>
+    <!-- Main Content -->
+    <main class="main-content">
+      @yield('content')
+    </main>
   </div>
-  <footer class="bg-dark text-center text-white">
-    <!-- Grid container -->
-    <div class="container p-4 pb-0">
-      <!-- Section: Form -->
-      <section class="">
-        <form action="">
-          <!--Grid row-->
-          <div class="row d-flex justify-content-center">
-            <!--Grid column-->
-            <div class="col-auto">
-              <p class="pt-2">
-                <strong>Sign up for our newsletter</strong>
-              </p>
-            </div>
-            <!--Grid column-->
 
-            <!--Grid column-->
-            <div class="col-md-5 col-12">
-              <!-- Email input -->
-              <div class="form-outline form-white mb-4">
-                <input type="email" id="form5Example2" class="form-control" />
-                <label class="form-label" for="form5Example2">Email address</label>
-              </div>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-auto">
-              <!-- Submit button -->
-              <button type="submit" class="btn btn-outline-light mb-4">
-                Subscribe
-              </button>
-            </div>
-            <!--Grid column-->
-          </div>
-          <!--Grid row-->
-        </form>
-      </section>
-      <!-- Section: Form -->
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <form class="row justify-content-center mb-3">
+        <div class="col-md-6">
+          <input type="email" class="form-control mb-2" placeholder="Votre adresse e-mail">
+        </div>
+        <div class="col-auto">
+          <button class="btn btn-outline-light">S'inscrire</button>
+        </div>
+      </form>
+      <small>&copy; {{ date('Y') }} School Management. Tous droits réservés.</small>
     </div>
-    <!-- Grid container -->
-
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2020 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-    </div>
-    <!-- Copyright -->
   </footer>
-
 </body>
-
 </html>
