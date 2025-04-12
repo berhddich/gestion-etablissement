@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-lg-12">
             <div class="card shadow">
-                <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
                     <h4 class="mb-0">Teachers</h4>
                     <a href="{{ route('teachers.create') }}" class="btn btn-light">
                         <i class="fas fa-plus-circle"></i> Add Teacher
@@ -21,7 +21,7 @@
 
                     <div class="table-responsive">
                         <table class="table table-bordered table-hover">
-                            <thead class="table-light">
+                            <thead class="table-dark">
                                 <tr>
                                     <th>ID</th>
                                     <th>Image</th>

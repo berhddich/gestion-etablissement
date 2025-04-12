@@ -18,7 +18,7 @@ class BookController extends Controller
         $books = Book::all();
 
         // Return the view with the books data
-        return view('books', compact('books'));
+        return view('books.index', compact('books'));
     }
 
     /**
@@ -28,7 +28,7 @@ class BookController extends Controller
      */
     public function create()
     {
-        return view('books-create');
+        return view('books.create');
     }
 
     /**
@@ -66,7 +66,7 @@ class BookController extends Controller
      */
     public function show(Book $book)
     {
-        return view('books-show', compact('book'));
+        return view('books.show', compact('book'));
     }
 
     /**
@@ -78,7 +78,7 @@ class BookController extends Controller
     public function edit($id)
     {
         $book = Book::findOrFail($id);
-        return view('books-edit', compact('book'));
+        return view('books.edit', compact('book'));
     }
 
     /**

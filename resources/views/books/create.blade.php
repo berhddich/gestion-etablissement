@@ -7,7 +7,7 @@
         @csrf
         @if(isset($book)) @method('PUT') @endif
 
-        @include('books-form')
+        @include('books.form')
 
         <button type="submit" class="btn btn-success mt-3">{{ isset($book) ? 'Mettre à jour' : 'Enregistrer' }}</button>
         <a href="{{ route('books.index') }}" class="btn btn-secondary mt-3">Annuler</a>

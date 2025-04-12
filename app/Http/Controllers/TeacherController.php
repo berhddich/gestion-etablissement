@@ -14,7 +14,7 @@ class TeacherController extends Controller
     public function index()
     {
         $teachers = Teacher::latest()->paginate(10);
-        return view('teachers', compact('teachers'));
+        return view('teachers.index', compact('teachers'));
     }
 
     /**
@@ -22,7 +22,7 @@ class TeacherController extends Controller
      */
     public function create()
     {
-        return view('teacher-create');
+        return view('teachers.create');
     }
 
     /**
@@ -57,7 +57,7 @@ class TeacherController extends Controller
      */
     public function show(Teacher $teacher)
     {
-        return view('teacher-show', compact('teacher'));
+        return view('teachers.show', compact('teacher'));
     }
 
     /**
@@ -65,7 +65,7 @@ class TeacherController extends Controller
      */
     public function edit(Teacher $teacher)
     {
-        return view('teacher-edit', compact('teacher'));
+        return view('teachers.edit', compact('teacher'));
     }
 
     /**

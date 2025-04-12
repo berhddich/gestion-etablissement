@@ -12,9 +12,6 @@
         <li><a href="{{ route('books.index') }}">📚 Gérer les livres</a></li>
         <li><a href="{{ route('students.index') }}">👨‍🎓 Gérer les étudiants</a></li>
         <li><a href="{{ route('teachers.index') }}">👨‍🏫 Gérer les enseignants</a></li>
-        @if(Auth::user()->role === 'admin')
-    <li><a href="{{ route('users.index') }}">👤 Gérer les utilisateurs</a></li>
-@endif
-
+        <li><a href="{{ route('users.index') }}">👤 Gérer les utilisateurs</a></li>
     </ul>
 @endsection

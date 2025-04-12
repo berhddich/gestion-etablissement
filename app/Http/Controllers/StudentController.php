@@ -17,7 +17,7 @@ class StudentController extends Controller
         $students = \App\Models\Student::all();
 
         // Return the view with the students data
-        return view('index', compact('students'));
+        return view('students.index', compact('students'));
     }
 
     /**
@@ -27,7 +27,7 @@ class StudentController extends Controller
      */
     public function create()
     {
-        return view('create');
+        return view('students.create');
     }
 
     public function store(Request $request)
@@ -59,7 +59,7 @@ class StudentController extends Controller
      */
     public function show(Student $student)
     {
-        return view('show', compact('student'));
+        return view('students.show', compact('student'));
     }
 
     /**
@@ -71,7 +71,7 @@ class StudentController extends Controller
     public function edit($id)
     {
     $student = Student::findOrFail($id);
-    return view('edit', compact('student'));
+    return view('students.edit', compact('student'));
     }
 
     /**

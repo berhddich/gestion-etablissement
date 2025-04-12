@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card shadow">
-                <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
                     <h4 class="mb-0">Teacher Details</h4>
                     <a href="{{ route('teachers.index') }}" class="btn btn-light">
                         <i class="fas fa-arrow-left"></i> Back to List

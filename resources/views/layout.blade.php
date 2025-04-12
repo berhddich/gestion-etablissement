@@ -50,7 +50,7 @@
     }
 
     .nav-link {
-      padding: 8px 0;
+      padding: 5px 0;
       color: #333;
     }
 
@@ -70,7 +70,7 @@
 <body>
   <!-- Header -->
   <header class="p-0">
-    <img src="/img/header.jpg" class="img-fluid w-100" style="max-height: 220px; object-fit: cover;">
+    <img src="/img/header.jpg" class="img-fluid w-100" style="max-height: 230px; object-fit: cover;">
   </header>
 
   <!-- Navbar -->
@@ -133,16 +133,9 @@
   </div>
 
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-4">
+  <footer class="bg-dark text-white text-center py-2">
     <div class="container">
-      <form class="row justify-content-center mb-3">
-        <div class="col-md-6">
-          <input type="email" class="form-control mb-2" placeholder="Votre adresse e-mail">
-        </div>
-        <div class="col-auto">
-          <button class="btn btn-outline-light">S'inscrire</button>
-        </div>
-      </form>
+     
       <small>&copy; {{ date('Y') }} School Management. Tous droits réservés.</small>
     </div>
   </footer>
