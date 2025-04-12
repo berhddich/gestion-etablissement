@@ -30,7 +30,7 @@ class TeacherController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
+        $validatedData =  $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:teachers',
             'phone' => 'required|string|max:20',
@@ -39,17 +39,17 @@ class TeacherController extends Controller
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
 
-        $data = $request->all();
+      
 
-        if ($request->hasFile('image')) {
-            $imagePath = $request->file('image')->store('teachers', 'public');
-            $data['image'] = $imagePath;
-        }
-
-        Teacher::create($data);
-
-        return redirect()->route('teachers.index')
-            ->with('success', 'Teacher created successfully.');
+            if ($image = $request->file('image')) {
+                $destinationPath = 'images/';
+                $profileImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
+                $image->move($destinationPath, $profileImage);
+                $validatedData['image'] = "$profileImage";
+            }
+    
+            $teacher = Teacher::create($validatedData);
+            return redirect('/teachers')->with('success', 'Teacher created successfully.'); 
     }
 
     /**
@@ -73,7 +73,7 @@ class TeacherController extends Controller
      */
     public function update(Request $request, Teacher $teacher)
     {
-        $request->validate([
+        $validatedData =  $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:teachers,email,' . $teacher->id,
             'phone' => 'required|string|max:20',
@@ -82,22 +82,18 @@ class TeacherController extends Controller
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
 
-        $data = $request->all();
-
-        if ($request->hasFile('image')) {
-            // Delete old image if exists
-            if ($teacher->image) {
-                Storage::disk('public')->delete($teacher->image);
+      
+            if ($image = $request->file('image')) {
+                $destinationPath = 'images/';
+                $profileImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
+                $image->move($destinationPath, $profileImage);
+                $validatedData['image'] = "$profileImage";
+            } else {
+                unset($validatedData['image']);
             }
-            
-            $imagePath = $request->file('image')->store('teachers', 'public');
-            $data['image'] = $imagePath;
-        }
-
-        $teacher->update($data);
-
-        return redirect()->route('teachers.index')
-            ->with('success', 'Teacher updated successfully.');
+    
+            $teacher->update($validatedData);
+            return redirect('/teachers')->with('success', 'Teacher updated successfully.');
     }
 
     /**

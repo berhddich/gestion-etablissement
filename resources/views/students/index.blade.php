@@ -9,7 +9,7 @@
 <div class="row">
     @foreach($students as $student)
         <div class="col-md-4 d-flex align-items-stretch mb-4">
-            <div class="card   text-center shadow-sm w-100">
+            <div class="  card   text-center shadow-sm w-100">
                 <div class="card-body">
                     <img src="{{ asset('images/'.$student->image) }}" alt="Photo de {{ $student->name }}"
                          class="rounded-circle mb-3" width="120" height="120" style="object-fit: cover;">

@@ -34,11 +34,12 @@ class StudentController extends Controller
     {
         $validatedData = $request->validate([
             'name' => 'required|max:255',
-            'email' => 'required|max:255',
-            'phone' => 'required',
+            'email' => 'required|email|unique:students,email|max:255',
+            'phone' => 'required|string|max:20',
             'section' => 'required',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
+        
 
         if ($image = $request->file('image')) {
             $destinationPath = 'images/';
@@ -85,8 +86,8 @@ class StudentController extends Controller
     {
         $validatedData = $request->validate([
             'name' => 'required|max:255',
-            'email' => 'required|max:255',
-            'phone' => 'required',
+            'email' => 'required|email|max:255|unique:students,email,' . $student->id,
+            'phone' => 'required|string|max:20',
             'section' => 'required',
         ]);
 
