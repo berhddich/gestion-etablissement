@@ -14,6 +14,7 @@
   <script src="/js/bootstrap.bundle.min.js"></script>
   <!-- END Bootstrap -->
   <link rel="stylesheet" href="/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -111,10 +112,11 @@
             <i class="fas fa-link"></i>
             <span>Manage Teachers</span>
           </a>
-          <a href="#">
-            <i class="fas fa-stream"></i>
-            <span>Overview</span>
+          <a href="{{ url('/books')}}" >
+            <i class="fas fa-link"></i>
+            <span>Manage Books</span>
           </a>
+         
           <a href="#">
             <i class="fas fa-calendar"></i>
             <span>Events</span>
@@ -151,10 +153,7 @@
 
             </div>
 
-            <p class="card-text">
-
-            </p>
-            <a href="#" class="btn btn-primary">Read More !</a>
+          
           </div>
         </div>
       </div>
