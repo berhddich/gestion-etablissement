@@ -32,7 +32,7 @@ Le design est moderne, responsive, et facile à utiliser grâce à **Bootstrap 5
 
 ```bash
 git clone <url-du-depot>
-cd school-management
+cd gestion-etablissement
 ```
 
 ### 2. Installer les dépendances
