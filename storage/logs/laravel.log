@@ -8160,3 +8160,171 @@ Did you mean one of these?
 #58 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\berhi\\\\...')
 #59 {main}
 "} 
+[2025-04-13 13:35:35] local.ERROR: include(C:\Users\berhi\Desktop\gestion-etablissement\vendor\composer/../laravel/breeze/src/BreezeServiceProvider.php): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer/../laravel/breeze/src/BreezeServiceProvider.php): Failed to open stream: No such file or directory at C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php:576)
+[stacktrace]
+#0 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(272): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\berhi\\\\...', 576)
+#1 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(576): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\berhi\\\\...', 576)
+#2 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(576): include('C:\\\\Users\\\\berhi\\\\...')
+#3 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\Users\\\\berhi\\\\...')
+#4 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(846): Composer\\Autoload\\ClassLoader->loadClass('Laravel\\\\Breeze\\\\...')
+#5 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(826): Illuminate\\Foundation\\Application->registerDeferredProvider('Laravel\\\\Breeze\\\\...', 'Laravel\\\\Breeze\\\\...')
+#6 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(802): Illuminate\\Foundation\\Application->loadDeferredProvider('Laravel\\\\Breeze\\\\...')
+#7 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(386): Illuminate\\Foundation\\Application->loadDeferredProviders()
+#8 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(153): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+[2025-04-13 13:35:39] local.ERROR: include(C:\Users\berhi\Desktop\gestion-etablissement\vendor\composer/../laravel/breeze/src/BreezeServiceProvider.php): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer/../laravel/breeze/src/BreezeServiceProvider.php): Failed to open stream: No such file or directory at C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php:576)
+[stacktrace]
+#0 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(272): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\berhi\\\\...', 576)
+#1 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(576): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\berhi\\\\...', 576)
+#2 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(576): include('C:\\\\Users\\\\berhi\\\\...')
+#3 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\Users\\\\berhi\\\\...')
+#4 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(846): Composer\\Autoload\\ClassLoader->loadClass('Laravel\\\\Breeze\\\\...')
+#5 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(826): Illuminate\\Foundation\\Application->registerDeferredProvider('Laravel\\\\Breeze\\\\...', 'Laravel\\\\Breeze\\\\...')
+#6 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(802): Illuminate\\Foundation\\Application->loadDeferredProvider('Laravel\\\\Breeze\\\\...')
+#7 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(386): Illuminate\\Foundation\\Application->loadDeferredProviders()
+#8 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(153): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+[2025-04-13 13:35:44] local.ERROR: include(C:\Users\berhi\Desktop\gestion-etablissement\vendor\composer/../laravel/breeze/src/BreezeServiceProvider.php): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer/../laravel/breeze/src/BreezeServiceProvider.php): Failed to open stream: No such file or directory at C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php:576)
+[stacktrace]
+#0 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(272): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\berhi\\\\...', 576)
+#1 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(576): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\berhi\\\\...', 576)
+#2 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(576): include('C:\\\\Users\\\\berhi\\\\...')
+#3 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\Users\\\\berhi\\\\...')
+#4 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(846): Composer\\Autoload\\ClassLoader->loadClass('Laravel\\\\Breeze\\\\...')
+#5 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(826): Illuminate\\Foundation\\Application->registerDeferredProvider('Laravel\\\\Breeze\\\\...', 'Laravel\\\\Breeze\\\\...')
+#6 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(802): Illuminate\\Foundation\\Application->loadDeferredProvider('Laravel\\\\Breeze\\\\...')
+#7 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(386): Illuminate\\Foundation\\Application->loadDeferredProviders()
+#8 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(153): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+[2025-04-13 13:35:49] local.ERROR: include(C:\Users\berhi\Desktop\gestion-etablissement\vendor\composer/../laravel/breeze/src/BreezeServiceProvider.php): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer/../laravel/breeze/src/BreezeServiceProvider.php): Failed to open stream: No such file or directory at C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php:576)
+[stacktrace]
+#0 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(272): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\berhi\\\\...', 576)
+#1 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(576): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\berhi\\\\...', 576)
+#2 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(576): include('C:\\\\Users\\\\berhi\\\\...')
+#3 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\Users\\\\berhi\\\\...')
+#4 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(846): Composer\\Autoload\\ClassLoader->loadClass('Laravel\\\\Breeze\\\\...')
+#5 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(826): Illuminate\\Foundation\\Application->registerDeferredProvider('Laravel\\\\Breeze\\\\...', 'Laravel\\\\Breeze\\\\...')
+#6 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(802): Illuminate\\Foundation\\Application->loadDeferredProvider('Laravel\\\\Breeze\\\\...')
+#7 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(386): Illuminate\\Foundation\\Application->loadDeferredProviders()
+#8 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(153): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+[2025-04-13 13:35:54] local.ERROR: include(C:\Users\berhi\Desktop\gestion-etablissement\vendor\composer/../laravel/breeze/src/BreezeServiceProvider.php): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer/../laravel/breeze/src/BreezeServiceProvider.php): Failed to open stream: No such file or directory at C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php:576)
+[stacktrace]
+#0 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(272): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\berhi\\\\...', 576)
+#1 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(576): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\berhi\\\\...', 576)
+#2 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(576): include('C:\\\\Users\\\\berhi\\\\...')
+#3 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\Users\\\\berhi\\\\...')
+#4 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(846): Composer\\Autoload\\ClassLoader->loadClass('Laravel\\\\Breeze\\\\...')
+#5 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(826): Illuminate\\Foundation\\Application->registerDeferredProvider('Laravel\\\\Breeze\\\\...', 'Laravel\\\\Breeze\\\\...')
+#6 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(802): Illuminate\\Foundation\\Application->loadDeferredProvider('Laravel\\\\Breeze\\\\...')
+#7 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(386): Illuminate\\Foundation\\Application->loadDeferredProviders()
+#8 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(153): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+[2025-04-13 13:35:59] local.ERROR: include(C:\Users\berhi\Desktop\gestion-etablissement\vendor\composer/../laravel/breeze/src/BreezeServiceProvider.php): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer/../laravel/breeze/src/BreezeServiceProvider.php): Failed to open stream: No such file or directory at C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php:576)
+[stacktrace]
+#0 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(272): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\berhi\\\\...', 576)
+#1 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(576): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\berhi\\\\...', 576)
+#2 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(576): include('C:\\\\Users\\\\berhi\\\\...')
+#3 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\Users\\\\berhi\\\\...')
+#4 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(846): Composer\\Autoload\\ClassLoader->loadClass('Laravel\\\\Breeze\\\\...')
+#5 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(826): Illuminate\\Foundation\\Application->registerDeferredProvider('Laravel\\\\Breeze\\\\...', 'Laravel\\\\Breeze\\\\...')
+#6 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(802): Illuminate\\Foundation\\Application->loadDeferredProvider('Laravel\\\\Breeze\\\\...')
+#7 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(386): Illuminate\\Foundation\\Application->loadDeferredProviders()
+#8 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(153): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+[2025-04-13 13:36:04] local.ERROR: include(C:\Users\berhi\Desktop\gestion-etablissement\vendor\composer/../laravel/breeze/src/BreezeServiceProvider.php): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer/../laravel/breeze/src/BreezeServiceProvider.php): Failed to open stream: No such file or directory at C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php:576)
+[stacktrace]
+#0 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(272): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\berhi\\\\...', 576)
+#1 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(576): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\berhi\\\\...', 576)
+#2 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(576): include('C:\\\\Users\\\\berhi\\\\...')
+#3 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\Users\\\\berhi\\\\...')
+#4 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(846): Composer\\Autoload\\ClassLoader->loadClass('Laravel\\\\Breeze\\\\...')
+#5 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(826): Illuminate\\Foundation\\Application->registerDeferredProvider('Laravel\\\\Breeze\\\\...', 'Laravel\\\\Breeze\\\\...')
+#6 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(802): Illuminate\\Foundation\\Application->loadDeferredProvider('Laravel\\\\Breeze\\\\...')
+#7 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(386): Illuminate\\Foundation\\Application->loadDeferredProviders()
+#8 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(153): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+[2025-04-13 13:36:09] local.ERROR: include(C:\Users\berhi\Desktop\gestion-etablissement\vendor\composer/../laravel/breeze/src/BreezeServiceProvider.php): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer/../laravel/breeze/src/BreezeServiceProvider.php): Failed to open stream: No such file or directory at C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php:576)
+[stacktrace]
+#0 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(272): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\berhi\\\\...', 576)
+#1 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(576): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\berhi\\\\...', 576)
+#2 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(576): include('C:\\\\Users\\\\berhi\\\\...')
+#3 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\Users\\\\berhi\\\\...')
+#4 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(846): Composer\\Autoload\\ClassLoader->loadClass('Laravel\\\\Breeze\\\\...')
+#5 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(826): Illuminate\\Foundation\\Application->registerDeferredProvider('Laravel\\\\Breeze\\\\...', 'Laravel\\\\Breeze\\\\...')
+#6 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(802): Illuminate\\Foundation\\Application->loadDeferredProvider('Laravel\\\\Breeze\\\\...')
+#7 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(386): Illuminate\\Foundation\\Application->loadDeferredProviders()
+#8 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(153): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+[2025-04-13 13:36:14] local.ERROR: include(C:\Users\berhi\Desktop\gestion-etablissement\vendor\composer/../laravel/breeze/src/BreezeServiceProvider.php): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer/../laravel/breeze/src/BreezeServiceProvider.php): Failed to open stream: No such file or directory at C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php:576)
+[stacktrace]
+#0 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(272): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\berhi\\\\...', 576)
+#1 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(576): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\berhi\\\\...', 576)
+#2 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(576): include('C:\\\\Users\\\\berhi\\\\...')
+#3 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\Users\\\\berhi\\\\...')
+#4 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(846): Composer\\Autoload\\ClassLoader->loadClass('Laravel\\\\Breeze\\\\...')
+#5 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(826): Illuminate\\Foundation\\Application->registerDeferredProvider('Laravel\\\\Breeze\\\\...', 'Laravel\\\\Breeze\\\\...')
+#6 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(802): Illuminate\\Foundation\\Application->loadDeferredProvider('Laravel\\\\Breeze\\\\...')
+#7 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(386): Illuminate\\Foundation\\Application->loadDeferredProviders()
+#8 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(153): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+[2025-04-13 13:36:19] local.ERROR: include(C:\Users\berhi\Desktop\gestion-etablissement\vendor\composer/../laravel/breeze/src/BreezeServiceProvider.php): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer/../laravel/breeze/src/BreezeServiceProvider.php): Failed to open stream: No such file or directory at C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php:576)
+[stacktrace]
+#0 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(272): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\berhi\\\\...', 576)
+#1 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(576): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\berhi\\\\...', 576)
+#2 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(576): include('C:\\\\Users\\\\berhi\\\\...')
+#3 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\Users\\\\berhi\\\\...')
+#4 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(846): Composer\\Autoload\\ClassLoader->loadClass('Laravel\\\\Breeze\\\\...')
+#5 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(826): Illuminate\\Foundation\\Application->registerDeferredProvider('Laravel\\\\Breeze\\\\...', 'Laravel\\\\Breeze\\\\...')
+#6 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(802): Illuminate\\Foundation\\Application->loadDeferredProvider('Laravel\\\\Breeze\\\\...')
+#7 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(386): Illuminate\\Foundation\\Application->loadDeferredProviders()
+#8 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(153): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+[2025-04-13 13:36:24] local.ERROR: include(C:\Users\berhi\Desktop\gestion-etablissement\vendor\composer/../laravel/breeze/src/BreezeServiceProvider.php): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer/../laravel/breeze/src/BreezeServiceProvider.php): Failed to open stream: No such file or directory at C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php:576)
+[stacktrace]
+#0 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(272): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\berhi\\\\...', 576)
+#1 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(576): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\berhi\\\\...', 576)
+#2 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(576): include('C:\\\\Users\\\\berhi\\\\...')
+#3 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\Users\\\\berhi\\\\...')
+#4 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(846): Composer\\Autoload\\ClassLoader->loadClass('Laravel\\\\Breeze\\\\...')
+#5 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(826): Illuminate\\Foundation\\Application->registerDeferredProvider('Laravel\\\\Breeze\\\\...', 'Laravel\\\\Breeze\\\\...')
+#6 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(802): Illuminate\\Foundation\\Application->loadDeferredProvider('Laravel\\\\Breeze\\\\...')
+#7 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(386): Illuminate\\Foundation\\Application->loadDeferredProviders()
+#8 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(153): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+[2025-04-13 13:36:53] local.ERROR: include(C:\Users\berhi\Desktop\gestion-etablissement\vendor\composer/../laravel/breeze/src/BreezeServiceProvider.php): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer/../laravel/breeze/src/BreezeServiceProvider.php): Failed to open stream: No such file or directory at C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php:576)
+[stacktrace]
+#0 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(272): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\berhi\\\\...', 576)
+#1 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(576): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\berhi\\\\...', 576)
+#2 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(576): include('C:\\\\Users\\\\berhi\\\\...')
+#3 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\Users\\\\berhi\\\\...')
+#4 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(846): Composer\\Autoload\\ClassLoader->loadClass('Laravel\\\\Breeze\\\\...')
+#5 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(826): Illuminate\\Foundation\\Application->registerDeferredProvider('Laravel\\\\Breeze\\\\...', 'Laravel\\\\Breeze\\\\...')
+#6 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(802): Illuminate\\Foundation\\Application->loadDeferredProvider('Laravel\\\\Breeze\\\\...')
+#7 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(386): Illuminate\\Foundation\\Application->loadDeferredProviders()
+#8 C:\\Users\\berhi\\Desktop\\gestion-etablissement\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(153): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
